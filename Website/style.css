@@ -1,0 +1,268 @@
+* {
+  margin:0;
+  padding:0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+#wrap {min-height: 100%;
+}
+
+.main {overflow:auto;
+  padding-bottom: 50px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  clear:both;
+  background-color: #afb5bb;
+}
+
+hr {
+  border-top: 1px solid;
+  margin: 10px 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: #edeff0;
+  font-family: Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sidebar {
+  background: #666666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@media all and (max-width: 640px) {
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.main {
+  margin-left: 240px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 640px) {
+
+  .main {
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.footer {
+  margin-left: 240px;
+  padding: 20px;
+  margin-bottom:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+@media all and (max-width: 640px) {
+
+  .footer {
+    margin-left: 0;
+  }
+}
+
+.sidebar a {
+  color: #ffffff;
+  opacity: 0.7;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+.sidebar a:hover {
+  opacity: 1;
+}
+.sidebar {
+  padding-top: 40px;
+}
+.sidebar h1 {
+  color: #edeff0;
+}
+.sidebar h2,
+.sidebar p {
+  color: #afb5bb;
+}
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #444c56;
+  width: 30%;
+  clear: both;
+  height: 0;
+  margin: 24px auto;
+}
+.sidebar .avatar {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin: 0 auto 30px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+.sidebar .avatar .logo {
+  transition: all 3.0s;
+}
+.sidebar .avatar .logo:hover {
+  transform: scale(1.0) rotateY(360deg);
+}
+.sidebar .social li {
+  display: inline-block;
+  width: 24px;
+  margin: 0 4px 10px;
+}
+.sidebar .social a {
+  display: inline-block;
+  opacity: 0.7;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+.sidebar .social a:hover {
+  opacity: 1;
+}
+.sidebar .social .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(img/social-icons.png) no-repeat;
+  -webkit-background-size: auto 24px;
+  -moz-background-size: auto 24px;
+  -o-background-size: auto 24px;
+  background-size: auto 24px;
+}
+.sidebar .social .icon.twitter {
+  background-position: 0 0;
+}
+.sidebar .social .icon.facebook {
+  background-position: -24px 0;
+}
+.sidebar .social .icon.google {
+  background-position: -48px 0;
+}
+.sidebar .social .icon.linkedin {
+  background-position: -72px 0;
+}
+.sidebar .social .icon.instagram {
+  background-position: -96px 0;
+}
+.sidebar .social .icon.github {
+  background-position: -120px 0;
+}
+.sidebar .social .icon.dribbble {
+  background-position: -144px 0;
+}
+.sidebar .social .icon.reddit {
+  background-position: -168px 0;
+}
+.sidebar .social .icon.treehouse {
+  background-position: -192px 0;  
+}
