@@ -11,10 +11,15 @@ window.onload = function() {
     game.state.start("StateMain");
 }
 
+//  Adding variables for our 
 var player;
+var enemies;
 var platforms;
+var walls;
 var cursors;
-
+var worldBounds;
 var stars;
 var score = 0;
 var scoreText;
+var hearts;
+var heartAmount;
