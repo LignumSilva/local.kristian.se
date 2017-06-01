@@ -1,30 +1,28 @@
 var StateMain = {
 
-        //  SET UP LIBRARY OF THE IMAGE, SOUND, ETC
+        //  PRELOADING A LIBRARY OF THE IMAGES, SOUNDS, ETC
         preload: function() {
 
             game.load.image('sky', 'assets/sky.png');
             game.load.image('ground', 'assets/platform.png');
-            game.load.image('inv_wall', 'assets/invisible_wall.png');
+            game.load.image('wall', 'assets/invisible_wall.png');
             game.load.image('star', 'assets/star.png');
+            game.load.image('heart', 'assets/heart.png', 18, 15, 3);
             game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
             game.load.spritesheet('baddie', 'assets/dude.png', 32, 48);
         },
 
-        //  CREATE OBJECTS TO BE USED DURING THE GAME
+        //  CREATING THE OBJECTS TO BE USED DURING THE GAME
         create: function() {
 
-            //  We're going to be using physics, so enable the Arcade Physics system
+            //  Enabling the Arcade Physics system
             game.physics.startSystem(Phaser.Physics.ARCADE);
 
-            //  A simple background for our game
+            //  A simple background
             game.add.sprite(0, 0, 'sky');
 
-            //  The platforms group contains the ground and the 2 ledges we can jump on
+            //  The platforms group contains the ground and the 2 ledges
             platforms = game.add.group();
-
-            //  The walls group contains the invisible walls that only affects enemies
-            walls = game.add.group();
 
             //  We will enable physics for any object that is created in this group
             platforms.enableBody = true;
@@ -32,57 +30,100 @@ var StateMain = {
             //   Here we create the ground.
             var ground = platforms.create(0, game.world.height - 64, 'ground');
 
-            //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
+            //  Scale it to fit the width of the game (original sprite is 400x32 in size)
             ground.scale.setTo(2, 2);
 
             //  This stops it from falling away when you jump on it
             ground.body.immovable = true;
 
-            //  Now let's create two ledges
+            //  Now let's create two ledges and make them immovable as well
             var ledge = platforms.create(400, 400, 'ground');
             ledge.body.immovable = true;
 
             ledge = platforms.create(-150, 250, 'ground');
             ledge.body.immovable = true;
 
+            //  The walls group contains the invisible walls
+            walls = game.add.group();
+
+            //  We will enable physics for any object that is created in this group
+            walls.enableBody = true;
+
             //  Let's create two invisible walls to block our enemy from falling off the ledge
-            var wall = walls.create(385, 358, 'inv_wall');
+            var wall = walls.create(385, 358, 'wall');
             wall.body.immovable = true;
             wall.visible = true;
 
-            wall = walls.create(250, 208, 'inv_wall');
+            wall = walls.create(250, 208, 'wall');
             wall.body.immovable = true;
             wall.visible = true;
 
-            //  The player and its settings
+            /*PLAYER*/
+
+            //  player and it's settings
             player = game.add.sprite(32, game.world.height - 150, 'dude');
 
-            //  We need to enable physics on the player
+            //  We need to enable physics on player
             game.physics.arcade.enable(player);
 
-            //  Our players two animations, walking left and right.
+            //  player animations, walking left and right
             player.animations.add('left', [0, 1, 2, 3], 10, true);
             player.animations.add('right', [5, 6, 7, 8], 10, true);
 
-            //  Player physics properties. Give the little guy a slight bounce.
+            //  player physics properties, give the little guy a slight bounce
             player.body.bounce.y = 0.2;
             player.body.gravity.y = 600;
             player.body.collideWorldBounds = true;
 
-            //  The enemy and its settings
-            enemy = game.add.sprite(750, game.world.height - 250, 'baddie');
+            /*ENEMIES*/
 
-            //  We need to enable physics on the enemy
-            game.physics.arcade.enable(enemy);
+            //  Adding a group for our enemies
+            enemies = game.add.group();
 
-            //  Our enemys two animations, walking left and right.
-            enemy.animations.add('left', [0, 1, 2, 3], 10, true);
-            enemy.animations.add('right', [5, 6, 7, 8], 10, true);
+            //  We will enable physics for any object that is created in this group
+            enemies.enableBody = true;
 
-            //  enemy physics properties. Our foe also gets a little bounce in his step.
-            enemy.body.bounce.y = 0.2;
-            enemy.body.gravity.y = 600;
-            enemy.body.collideWorldBounds = true;
+            //  Adding enemy1 and it's settings
+            var enemy1 = enemies.create(750, game.world.height - 250, 'baddie');
+
+            //  We need to enable physics on enemy1
+            game.physics.arcade.enable(enemy1);
+
+            //  Enemy1 animations, walking left and right
+            enemy1.animations.add('left', [0, 1, 2, 3], 10, true);
+            enemy1.animations.add('right', [5, 6, 7, 8], 10, true);
+
+            //  Enemy1 physics properties. Our enemy also gets a little bounce in his step
+            enemy1.body.bounce.y = 0.2;
+            enemy1.body.gravity.y = 600;
+            enemy1.body.collideWorldBounds = true;
+
+            //  Set enemy1 starting direction, speed and animation
+            enemy1.body.velocity.x = -70;
+            enemy1.animations.play('left');
+
+            //  Adding another enemy and it's settings
+            var enemy2 = enemies.create(10, game.world.height - 400, 'baddie');
+
+            //  We need to enable physics on enemy2
+            game.physics.arcade.enable(enemy2);
+
+            enemy2.enableBody = true;
+
+            //  Enemy2 animations, walking left and right
+            enemy2.animations.add('left', [0, 1, 2, 3], 10, true);
+            enemy2.animations.add('right', [5, 6, 7, 8], 10, true);
+
+            //  Enemy2 physics properties. Our enemy also gets a little bounce in his step
+            enemy2.body.bounce.y = 0.2;
+            enemy2.body.gravity.y = 600;
+            enemy2.body.collideWorldBounds = true;
+
+            //  Set enemy2 starting direction, speed and animation
+            enemy2.body.velocity.x = 70;
+            enemy2.animations.play('right');
+
+            /*STARS*/
 
             //  Finally some stars to collect
             stars = game.add.group();
@@ -103,28 +144,47 @@ var StateMain = {
             }
 
             //  The score
-            scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+            scoreText = game.add.text(650, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+
+            /*HEARTS*/
+
+            //  Adding hearts to represent player health
+            hearts = game.add.group();
+
+            //  We will enable physics for any star that is created in this group
+            hearts.enableBody = false;
+
+            //  We create 3 of them
+            for (var i = 0; i < 3; i++) {
+                //  Create a heart inside of the 'hearts' group
+                var heartAmount = hearts.create(i * 20, 0, 'heart');
+            }
+
+            /*CONTROLS*/
 
             //  Our controls.
             cursors = game.input.keyboard.createCursorKeys();
         },
 
-        //  CONSTANTLY RUNNING LOOP
+        //  UPDATING ON A RUNNING LOOP, CHECKING FOR CHANGES AND ACTING ACCORDINGLY
         update: function() {
 
-            //  Collide the player, enemies and the stars with the platforms
+            //  Collide the player, enemy and the stars with the platforms group
             game.physics.arcade.collide(player, platforms);
-            game.physics.arcade.collide(enemy, platforms);
-            game.physics.arcade.collide(player, enemy);
+            game.physics.arcade.collide(enemies, platforms);
             game.physics.arcade.collide(stars, platforms);
 
-            //  Collide enemies with the walls and make them turn around
-            game.physics.arcade.collide(enemy, walls, collideWall, null, this);
+            //  Checks if the enemy collide with the walls, if so, call the enemiesCollide function
+            game.physics.arcade.collide(enemies, walls, enemiesCollide, null, this);
 
-            //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
+            //  Checks to see if the player overlaps with an enemy, if so, call the playerAttacked function
+            game.physics.arcade.overlap(player, enemies, heart, playerAttacked, null, this);
+
+            //  Checks to see if the player overlaps with any of the stars, if so, call the collectStar function
             game.physics.arcade.overlap(player, stars, collectStar, null, this);
 
-            //  Reset the players velocity (movement)
+            //  PLAYER MOVEMENT
+            //  Reset player velocity (movement)
             player.body.velocity.x = 0;
 
             if (cursors.left.isDown) {
@@ -143,30 +203,28 @@ var StateMain = {
 
                 player.frame = 4;
             }
-
             //  Allow the player to jump if they are touching the ground
             if (cursors.up.isDown && player.body.touching.down) {
                 player.body.velocity.y = -450;
             }
-        }
 
-        function collectStar(player, star) {
-
-            // Removes the star from the screen
-            star.kill();
-
-            //  Add and update the score
-            score += 10;
-            scoreText.text = 'Score: ' + score;
-        }
-
-        function collideWall(enemy, walls) {
-
-            //  Makes enemy walk in oposite direction
-            if enemy.body.velocity.x = -70; {
-                enemy.body.velocity.x = 70;
-                enemy.animations.play('right');
-            } else if enemy.body.velocity.x = 70; {
-                enemy.body.velocity.x = -70;
-                enemy.animations.play('right');
+        //  Function for what will happen when enemies collide with walls
+        function enemiesCollide(enemies, walls) {
+                enemies.scale.x *= -1;
             }
+
+        //  Function to decide what happens when player overlaps with an enemy
+        function playerAttacked(player, enemies, heart) {
+            heart.kill();
+            }
+
+        //  Function to decide what happens when player and stars overlap
+        function collectStar(player, star) {
+                //  Removes the star from the screen
+                star.kill();
+                //  Add and update the score
+                score += 10;
+                scoreText.text = 'Score: ' + score;
+        }
+    }
+}
