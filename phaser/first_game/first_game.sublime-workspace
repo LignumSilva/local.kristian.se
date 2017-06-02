@@ -1,0 +1,760 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"player",
+				"playerAttacked"
+			],
+			[
+				"enemy",
+				"enemyCollideWalls"
+			],
+			[
+				"enemy1",
+				"enemy1"
+			],
+			[
+				"enable",
+				"enableBody"
+			],
+			[
+				"worl",
+				"collideWorldBounds"
+			],
+			[
+				"enab",
+				"enableBody"
+			],
+			[
+				"collide",
+				"collideCallback"
+			],
+			[
+				"colli",
+				"collideWall"
+			],
+			[
+				"collid",
+				"collideWorldBounds"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"inv",
+				"inv_wall"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"my",
+				"myBackground"
+			],
+			[
+				"ctx",
+				"context"
+			],
+			[
+				"image",
+				"image"
+			],
+			[
+				"desert",
+				"desert_map"
+			],
+			[
+				"get",
+				"getContext"
+			],
+			[
+				"deser",
+				"desert_map"
+			],
+			[
+				"myVeh",
+				"myVehicle2"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"roll",
+				"rollDice"
+			],
+			[
+				"D",
+				"Dice-a-6"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"images",
+				"images-center"
+			],
+			[
+				"dic",
+				"dice-a"
+			],
+			[
+				"p",
+				"php"
+			],
+			[
+				"run",
+				"ruby-base-container"
+			],
+			[
+				"in",
+				"inline-flex"
+			],
+			[
+				"print",
+				"print_info"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"in_",
+				"in_stock"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"Player",
+				"Player1"
+			],
+			[
+				"play",
+				"player2"
+			],
+			[
+				"array",
+				"array_values"
+			],
+			[
+				"unset",
+				"unset"
+			],
+			[
+				"array_un",
+				"array_unshift"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"fi",
+				"finalAverage"
+			],
+			[
+				"stude",
+				"Students"
+			],
+			[
+				"sc",
+				"school"
+			],
+			[
+				"curren",
+				"currentGrade"
+			],
+			[
+				"H",
+				"Holligan"
+			],
+			[
+				"html",
+				"HTML"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"inco",
+				"incorrect_value"
+			],
+			[
+				"value",
+				"value_to_convert"
+			],
+			[
+				"class",
+				"class_alias"
+			],
+			[
+				"kilo",
+				"kilometer"
+			],
+			[
+				"km",
+				"km_to_mile"
+			],
+			[
+				"kg",
+				"kg_to_lb"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "indent",
+		"selected_items":
+		[
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package",
+				"Package Control: List Packages"
+			],
+			[
+				"prettify",
+				"HTMLPrettify: Set Keyboard Shortcuts"
+			],
+			[
+				"Package COntrol: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Tidy",
+				"Tidy CSS (Highest Compression)"
+			],
+			[
+				"package control: ta",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"CodeFormatter",
+				"CodeFormatter: Format as CSS Syntax"
+			],
+			[
+				"",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Reindent Lines",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"insertCharacters \"Hello World!\\n",
+			"\"insertCharacters \"Hello World!\\n\"",
+			"insertCharacters \"Hello World!\\n",
+			"exec",
+			"exec command",
+			"show",
+			"exec command",
+			"exec",
+			"exec command",
+			"console clear",
+			"clear",
+			"/help",
+			"help",
+			"run",
+			"conditionals.php"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/maja/Kristian/local.kristian.se/phaser/first_game/js/phaser.min.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/first_game/js/stateMain.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/first_game/js/main.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/first_game/index.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/first_game/js/backup-stateMain.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/platformer/js/main.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/platformer/js/phaser.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/platformer/index.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/platformer/js/phaser.min.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser-examples-master/examples/animation/creature dragon.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part9.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/tutorial.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaserquest-master/index.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaserquest/server.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaserquest/js/spaceMap.js",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part1.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part4.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part5.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part6.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part7.html",
+		"/Users/maja/Kristian/local.kristian.se/phaser/phaser_tutorial/part8.html",
+		"/Users/maja/Downloads/phaser.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/css/styles.css",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/css/bootstrap.min.css",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/tank.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/SeamlessLoop.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/scripts.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/levels.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/jquery-1.12.0.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/game.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/explosion.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/bricks.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/js/bootstrap.min.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/tankGame/index.html",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.0/vehicles.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.0/tanks.css",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.0/game.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Water.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Stone.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Player.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/LifePack.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Coin.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Cell.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/Brick.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/entities/AIPlayer.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/configuration/config.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/communicator/Communicator.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/tankgametest02_gui/GameWorld.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/src/tankgametest02_gui/TankGametest02_GUI.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/configuration/config_data.properties",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/nbproject/private/private.properties",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/nbproject/project.properties",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/manifest.mf",
+		"/Users/maja/Downloads/TankGame-master/src/configuration/config.java",
+		"/Users/maja/Downloads/TankGame-master/src/communicator/Communicator.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_2.0/tanks_2.0.php",
+		"/Users/maja/Downloads/TankGame-master/src/tankgametest02_gui/GameWorld.java",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.0/tanks_1.0.css",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.0/tanks_1.0.php",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (OSX).sublime-keymap",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/CodeFormatter/Default (OSX).sublime-keymap",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Other stuff/tankGame-master/js/scripts.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.6/tanks_1.6.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.4/tank.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.4/game.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.4/tanks_1.4.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Other stuff/tankGame-master/js/game.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Other stuff/tankGame-master/index.html",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Games/Tanks/tanks_1.6.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/online-stopwatch.css",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/countdown-timer.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/getswf.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/min.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/ga.js",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/timer.html",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Timer/timer.php",
+		"/Users/maja/Kristian/local.kristian.se/Repos/Unit Converter/index.css",
+		"/Users/maja/Kristian/local.kristian.se/Games/Tanks/tanks.css",
+		"/Users/maja/Kristian/local.kristian.se/Games/Tanks/tanks.php",
+		"/Users/maja/Kristian/local.kristian.se/Games/Tanks_2.0/Tanks2.0.php",
+		"/Users/maja/Kristian/local.kristian.se/Games/tankGame-master/js/game.js",
+		"/Users/maja/Kristian/local.kristian.se/Games/tankGame-master/js/explosion.js",
+		"/Users/maja/Kristian/local.kristian.se/Games/tankGame-master/css/styles.css",
+		"/Users/maja/Kristian/local.kristian.se/Games/tankGame-master/js/tank.js",
+		"/Users/maja/Kristian/local.kristian.se/Games/DieRoller/dietest.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/pingpong.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/loops.php",
+		"/Users/maja/Kristian/local.kristian.se/Games/DieRoller/dieroller.css",
+		"/Users/maja/Kristian/local.kristian.se/Games/DieRoller/dieroller.php",
+		"/Users/maja/Kristian/local.kristian.se/Games/DieRoller/dietest.css",
+		"/Users/maja/Kristian/local.kristian.se/Test/conditionals.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/switch.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/school.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/indexed arrays.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/associative_arrays.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/todo.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/substr.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/function2.php",
+		"/Users/maja/Kristian/local.kristian.se/Test/function.php",
+		"/Users/maja/Kristian/local.kristian.se/Website/style.css",
+		"/Users/maja/Kristian/local.kristian.se/Website/index.php",
+		"/Users/maja/Kristian/local.kristian.se/Games/Die Roller/dieroller.php",
+		"/Users/maja/Kristian/local.kristian.se/index.php",
+		"/Users/maja/Downloads/list.php",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/maja/Kristian/local.kristian.se/Test/Test.sublime-project",
+		"/Users/maja/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/maja/kristian/local.kristian.se/index.css",
+		"/Users/maja/kristian/local.kristian.se/index.php",
+		"/Users/maja/kristian/unit_conversion.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#20/index.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#22/script.js",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#21/subway.css",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#18/_footer.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#17/_header.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#19/subway.css",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#11/_header.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#5/subway.css",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#15/_footer.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#16/index.php",
+		"/Users/maja/Library/Caches/com.binarynights.ForkLift2/#13/mandag.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"slime",
+			"DIRECTION",
+			"slime",
+			"update",
+			"slime",
+			"Slime",
+			"slime",
+			"Slime",
+			"slime",
+			"Slime",
+			"hearts",
+			"stars",
+			"heart",
+			"animation",
+			"{",
+			"hearts",
+			"collide",
+			"Collide",
+			"collide",
+			"Collide",
+			"collide",
+			"Collide",
+			"collide",
+			"enemy1",
+			"Enemy1",
+			"enemy1",
+			"Enemy1",
+			"enemy1",
+			"Enemy1",
+			"enemies",
+			"enemy",
+			"Enemy",
+			"enemy",
+			"players",
+			"player1",
+			"PLAYER1",
+			"player1",
+			"Player1",
+			"player1",
+			"Player1",
+			"player1",
+			"Player1",
+			"collide",
+			"check",
+			"ledge",
+			"}",
+			"{",
+			"platform",
+			"}",
+			"{",
+			"gamearea",
+			"wall",
+			"walls",
+			"slime",
+			"enemy",
+			"processCallback",
+			"render",
+			"canvas",
+			"World",
+			"collideWall",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"enemy",
+			"}",
+			"{",
+			"inv_",
+			"{",
+			"{\n",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"}",
+			"{",
+			"enemy",
+			"play",
+			"player",
+			"}",
+			"{",
+			"asd",
+			"left",
+			"right",
+			"false",
+			"Enemywall",
+			"invisible",
+			"ledge",
+			"');\n",
+			"invis",
+			"Touching",
+			"touching",
+			"asd",
+			"right",
+			"left",
+			"}",
+			"{",
+			"right",
+			"this",
+			"10",
+			"ude",
+			"animation",
+			"player",
+			"capguy",
+			"}",
+			"{",
+			"player",
+			"atlasJSONArray",
+			"player",
+			"Spritesheet",
+			"Game.Load",
+			"Phaser.Cache",
+			"Phaser.Loader"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.406061393261,
+			0.741383730939,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "first_game.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 143.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
